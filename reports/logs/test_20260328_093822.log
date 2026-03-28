@@ -1,0 +1,105 @@
+2026-03-28 09:38:22 | INFO     | conftest | ============================================================
+2026-03-28 09:38:22 | INFO     | conftest | Setting up browser for: test_valid_login
+2026-03-28 09:38:22 | INFO     | conftest | ============================================================
+2026-03-28 09:38:43 | INFO     | test_login | TC_001: Valid Login
+2026-03-28 09:38:43 | INFO     | BasePage | Navigating to: https://the-internet.herokuapp.com/login
+2026-03-28 09:38:51 | INFO     | LoginPage | Login page opened
+2026-03-28 09:38:51 | INFO     | LoginPage | Attempting login with username: 'tomsmith'
+2026-03-28 09:38:51 | INFO     | BasePage | Typing 'tomsmith' into element: (id, username)
+2026-03-28 09:38:51 | INFO     | BasePage | Typing 'SuperSecretPassword!' into element: (id, password)
+2026-03-28 09:38:51 | INFO     | BasePage | Clicking element: (css selector, button[type='submit'])
+2026-03-28 09:38:52 | INFO     | conftest | Tearing down browser for: test_valid_login
+2026-03-28 09:38:59 | INFO     | conftest | ============================================================
+2026-03-28 09:38:59 | INFO     | conftest | Setting up browser for: test_login_with_invalid_password
+2026-03-28 09:38:59 | INFO     | conftest | ============================================================
+2026-03-28 09:39:00 | INFO     | test_login | TC_002: Invalid Password
+2026-03-28 09:39:00 | INFO     | BasePage | Navigating to: https://the-internet.herokuapp.com/login
+2026-03-28 09:39:07 | INFO     | LoginPage | Login page opened
+2026-03-28 09:39:07 | INFO     | LoginPage | Attempting login with username: 'tomsmith'
+2026-03-28 09:39:07 | INFO     | BasePage | Typing 'tomsmith' into element: (id, username)
+2026-03-28 09:39:07 | INFO     | BasePage | Typing 'wrongpassword' into element: (id, password)
+2026-03-28 09:39:07 | INFO     | BasePage | Clicking element: (css selector, button[type='submit'])
+2026-03-28 09:39:08 | INFO     | conftest | Tearing down browser for: test_login_with_invalid_password
+2026-03-28 09:39:14 | INFO     | conftest | ============================================================
+2026-03-28 09:39:14 | INFO     | conftest | Setting up browser for: test_login_with_invalid_username
+2026-03-28 09:39:14 | INFO     | conftest | ============================================================
+2026-03-28 09:39:16 | INFO     | test_login | TC_003: Invalid Username
+2026-03-28 09:39:16 | INFO     | BasePage | Navigating to: https://the-internet.herokuapp.com/login
+2026-03-28 09:39:25 | INFO     | LoginPage | Login page opened
+2026-03-28 09:39:25 | INFO     | LoginPage | Attempting login with username: 'invaliduser123'
+2026-03-28 09:39:25 | INFO     | BasePage | Typing 'invaliduser123' into element: (id, username)
+2026-03-28 09:39:25 | INFO     | BasePage | Typing 'SuperSecretPassword!' into element: (id, password)
+2026-03-28 09:39:25 | INFO     | BasePage | Clicking element: (css selector, button[type='submit'])
+2026-03-28 09:39:26 | INFO     | conftest | Tearing down browser for: test_login_with_invalid_username
+2026-03-28 09:39:33 | INFO     | conftest | ============================================================
+2026-03-28 09:39:33 | INFO     | conftest | Setting up browser for: test_login_with_empty_username
+2026-03-28 09:39:33 | INFO     | conftest | ============================================================
+2026-03-28 09:39:34 | INFO     | test_login | TC_004: Empty Username
+2026-03-28 09:39:34 | INFO     | BasePage | Navigating to: https://the-internet.herokuapp.com/login
+2026-03-28 09:39:41 | INFO     | LoginPage | Login page opened
+2026-03-28 09:39:41 | INFO     | LoginPage | Attempting login with username: ''
+2026-03-28 09:39:41 | INFO     | BasePage | Typing '' into element: (id, username)
+2026-03-28 09:39:41 | INFO     | BasePage | Typing 'SuperSecretPassword!' into element: (id, password)
+2026-03-28 09:39:41 | INFO     | BasePage | Clicking element: (css selector, button[type='submit'])
+2026-03-28 09:39:57 | INFO     | conftest | Tearing down browser for: test_login_with_empty_username
+2026-03-28 09:40:05 | INFO     | conftest | ============================================================
+2026-03-28 09:40:05 | INFO     | conftest | Setting up browser for: test_login_with_empty_password
+2026-03-28 09:40:05 | INFO     | conftest | ============================================================
+2026-03-28 09:40:07 | INFO     | test_login | TC_005: Empty Password
+2026-03-28 09:40:07 | INFO     | BasePage | Navigating to: https://the-internet.herokuapp.com/login
+2026-03-28 09:40:12 | INFO     | LoginPage | Login page opened
+2026-03-28 09:40:12 | INFO     | LoginPage | Attempting login with username: 'tomsmith'
+2026-03-28 09:40:12 | INFO     | BasePage | Typing 'tomsmith' into element: (id, username)
+2026-03-28 09:40:12 | INFO     | BasePage | Typing '' into element: (id, password)
+2026-03-28 09:40:12 | INFO     | BasePage | Clicking element: (css selector, button[type='submit'])
+2026-03-28 09:40:29 | INFO     | conftest | Tearing down browser for: test_login_with_empty_password
+2026-03-28 09:40:35 | INFO     | conftest | ============================================================
+2026-03-28 09:40:35 | INFO     | conftest | Setting up browser for: test_logout_after_valid_login
+2026-03-28 09:40:35 | INFO     | conftest | ============================================================
+2026-03-28 09:40:37 | INFO     | test_login | TC_006: Logout Functionality
+2026-03-28 09:40:37 | INFO     | BasePage | Navigating to: https://the-internet.herokuapp.com/login
+2026-03-28 09:40:42 | INFO     | LoginPage | Login page opened
+2026-03-28 09:40:42 | INFO     | LoginPage | Attempting login with username: 'tomsmith'
+2026-03-28 09:40:42 | INFO     | BasePage | Typing 'tomsmith' into element: (id, username)
+2026-03-28 09:40:42 | INFO     | BasePage | Typing 'SuperSecretPassword!' into element: (id, password)
+2026-03-28 09:40:42 | INFO     | BasePage | Clicking element: (css selector, button[type='submit'])
+2026-03-28 09:40:44 | INFO     | DashboardPage | Clicking Logout button
+2026-03-28 09:40:44 | INFO     | BasePage | Clicking element: (css selector, a.button.secondary)
+2026-03-28 09:40:45 | INFO     | conftest | Tearing down browser for: test_logout_after_valid_login
+2026-03-28 09:40:51 | INFO     | conftest | ============================================================
+2026-03-28 09:40:51 | INFO     | conftest | Setting up browser for: test_home_page_title
+2026-03-28 09:40:51 | INFO     | conftest | ============================================================
+2026-03-28 09:40:53 | INFO     | test_navigation | TC_007: Home page title
+2026-03-28 09:40:53 | INFO     | BasePage | Navigating to: https://the-internet.herokuapp.com
+2026-03-28 09:41:03 | INFO     | conftest | Tearing down browser for: test_home_page_title
+2026-03-28 09:41:09 | INFO     | conftest | ============================================================
+2026-03-28 09:41:09 | INFO     | conftest | Setting up browser for: test_login_page_elements_present
+2026-03-28 09:41:09 | INFO     | conftest | ============================================================
+2026-03-28 09:41:11 | INFO     | test_navigation | TC_008: Login page elements
+2026-03-28 09:41:11 | INFO     | BasePage | Navigating to: https://the-internet.herokuapp.com/login
+2026-03-28 09:41:19 | INFO     | LoginPage | Login page opened
+2026-03-28 09:41:19 | INFO     | conftest | Tearing down browser for: test_login_page_elements_present
+2026-03-28 09:41:25 | INFO     | conftest | ============================================================
+2026-03-28 09:41:25 | INFO     | conftest | Setting up browser for: test_checkboxes_interaction
+2026-03-28 09:41:25 | INFO     | conftest | ============================================================
+2026-03-28 09:41:27 | INFO     | test_navigation | TC_009: Checkbox interaction
+2026-03-28 09:41:27 | INFO     | BasePage | Navigating to: https://the-internet.herokuapp.com/checkboxes
+2026-03-28 09:41:33 | INFO     | conftest | Tearing down browser for: test_checkboxes_interaction
+2026-03-28 09:41:39 | INFO     | conftest | ============================================================
+2026-03-28 09:41:39 | INFO     | conftest | Setting up browser for: test_dropdown_selection
+2026-03-28 09:41:39 | INFO     | conftest | ============================================================
+2026-03-28 09:41:41 | INFO     | test_navigation | TC_010: Dropdown selection
+2026-03-28 09:41:41 | INFO     | BasePage | Navigating to: https://the-internet.herokuapp.com/dropdown
+2026-03-28 09:41:55 | INFO     | conftest | Tearing down browser for: test_dropdown_selection
+2026-03-28 09:42:02 | INFO     | conftest | ============================================================
+2026-03-28 09:42:02 | INFO     | conftest | Setting up browser for: test_javascript_alert_ok
+2026-03-28 09:42:02 | INFO     | conftest | ============================================================
+2026-03-28 09:42:03 | INFO     | test_navigation | TC_011: JS Alert - Accept
+2026-03-28 09:42:03 | INFO     | BasePage | Navigating to: https://the-internet.herokuapp.com/javascript_alerts
+2026-03-28 09:42:09 | INFO     | conftest | Tearing down browser for: test_javascript_alert_ok
+2026-03-28 09:42:15 | INFO     | conftest | ============================================================
+2026-03-28 09:42:15 | INFO     | conftest | Setting up browser for: test_javascript_confirm_cancel
+2026-03-28 09:42:15 | INFO     | conftest | ============================================================
+2026-03-28 09:42:17 | INFO     | test_navigation | TC_012: JS Confirm - Dismiss
+2026-03-28 09:42:17 | INFO     | BasePage | Navigating to: https://the-internet.herokuapp.com/javascript_alerts
+2026-03-28 09:42:23 | INFO     | conftest | Tearing down browser for: test_javascript_confirm_cancel
