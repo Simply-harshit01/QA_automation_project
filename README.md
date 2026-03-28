@@ -84,6 +84,5 @@ Tests run against [https://the-internet.herokuapp.com](https://the-internet.hero
 
 ## 👤 Author
 
-**Your Name**  
-QA Automation Engineer  
-[LinkedIn](https://linkedin.com) | [GitHub](https://github.com)
+**HARSHIT MISHRA**  
+
